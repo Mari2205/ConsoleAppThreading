@@ -38,18 +38,18 @@ namespace ConsoleAppThreeding
             //    thread3.Abort();
             //}
             #endregion
-
-
-
+            #region opg 4
             Thread thread4 = new Thread(PrintUsrInput);
             thread4.Start();
 
             Thread thread5 = new Thread(UsrInput);
             thread5.Start();
+            #endregion
 
             Console.Read();
 
             Console.ReadKey();
+
         }
 
         static public void PrintUsrInput()
